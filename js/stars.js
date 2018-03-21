@@ -13,10 +13,7 @@ let level_5 = 5000
  	for(let i=0; i < capa_estrellas.length; i++)
 	{
 		let index = capa_estrellas[i].parentNode.parentNode.dataset.number
-
-
 		let value = Object.values(ranking)[index-1]
-
 
 		values(value, i)
 	}
