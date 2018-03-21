@@ -1,7 +1,7 @@
 
 let container_boxes = document.getElementById('container_boxes')
 var cantidad_cajas  = null // Varía con el tamaño del viewport
-let variable        = null // Limita las llamadas a createAll()
+let variable        = null // Limita las llamadas a execute()
 
 
 
