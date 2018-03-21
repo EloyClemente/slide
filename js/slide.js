@@ -21,12 +21,12 @@ left_arrow.addEventListener('click', function(e){
 
 
 
-function execute(cantidad_cajas) // Llamada desde responsive.js
+function execute(cantidad_cajas)  // Llamada desde responsive.js
 {
-	create() // Crear cajas iniciales
-	insert_all(cantidad_cajas) // Insertar cajas
-	position_box() // Posicionar cajas
-	number_box_all() // Asignar atributos data
+	create()                    // Crear cajas iniciales
+	insert_all(cantidad_cajas)  // Insertar cajas
+	position_box()              // Posicionar cajas
+	number_box_all()            // Asignar atributos data
 	insertAllPictures()
 	insertAllTitles()
 }
