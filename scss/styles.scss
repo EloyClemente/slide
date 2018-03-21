@@ -1,0 +1,151 @@
+
+@import "00-reset";
+@import "01-mixins";
+
+
+
+.container-principal{
+	@include flex;
+	justify-content: space-between;
+	width: 100%;
+	@media(max-width: 800px)
+	{
+		justify-content: center;
+	}
+}
+
+
+
+// CONTAINER GENERAL
+// DEL SLIDE
+//..................
+.container-slide{
+	@include flex;
+	margin-top: 20px;
+	// @include gray;
+}
+
+
+// Container para
+// las cajas
+//...............
+.container-boxes{
+	@include flex;
+	// justify-content: flex-start;
+	// El width se controla desde js
+	height: 390px;
+	overflow: hidden;
+	position: relative;
+	// @include red;
+	@media(max-width: 1200px)
+	{
+		width: 675px;
+	}
+	@media(max-width: 900px)
+	{
+		width: 450px;
+	}
+	@media(max-width: 650px)
+	{
+		width: 225px;
+	}
+}
+
+
+
+// Cajas
+//.............
+.container-box{
+	min-width: 200px;
+	height: 94%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	transition: all, .3s;
+	position: absolute;
+	top: 0;
+	// @include blue;
+}
+
+
+// Container 
+// para las fotos
+//...............
+.container-pic{
+	width: 100%;
+	height: 80%;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	// @include orange;
+}
+
+
+// Container para el 
+// título y estrellas
+//.....................
+.container-title-stars{
+	height: 20%;
+	border-radius: 10px;
+	// @include red;
+}
+
+
+// Titulo de la pelicula
+//......................
+.container-title-film{
+	@include flex;
+	height: 90%;
+	font-family: 'Exo 2', sans-serif;
+}
+
+
+// Container estrellas
+//....................
+.container-stars{
+	@include flex;
+	height: 10%;
+}
+// Estrellas
+//..........
+.icon-star{
+	color: #D0D0D0;
+}
+
+
+// Flechas
+//...............
+.icon-left-arrow,
+.icon-right-arrow{
+	color: orange;
+	font-size: 40px;
+	cursor: pointer;
+	transition: all, .3s;
+	margin-bottom: 60px;
+
+	// position: relative;
+	// top: 300px;
+
+	&:hover{
+		color: darken(orange, 10%);
+	}
+}
+
+
+
+.aside-banner{
+	width:33.33%;
+	max-width: 200px;
+	height: 300px;
+	transition: all, .3s;
+	@media(max-width: 800px)
+	{
+		display: none;
+	}
+}
+.aside-banner img{
+	width: 100%;
+	display: none;
+
+}
